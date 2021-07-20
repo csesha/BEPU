@@ -1,0 +1,18 @@
+Pointer codes
+
+C. Seshadhri, Jun 19
+
+----------------------------------------
+
+This is a collection of teaching codes for explaining pointers, especially in regard to structures, arrays, and memory allocation.
+Each C file is a standalone snippet of code.
+
+USAGE: For any file (say, deref-struct.c), run as:
+    gcc <C FILE>
+    ./a.out
+
+The compilation may generate warnings, since the code prints out pointer values. You can ignore those warnings.
+
+For each code, read it to see what it is printing. Try to make sense of the output. If you can understand all the output,
+it will give a strong understanding of pointers.
+
