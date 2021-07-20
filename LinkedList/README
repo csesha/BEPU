@@ -1,0 +1,37 @@
+----------------------------------------------------
+
+README for LinkedList codes
+
+C. Seshadhri, Jul 2021
+-----------------------------------------------------
+
+USAGE (in main folder):
+    <EXECUTABLE NAME>  <INPUT FILE> <OUTPUT FILE>
+
+    <INPUT FILE> is the name of a file with a list of operations to be performed on a linked list.
+    <OUTPUT FILE> will have the results of these operations.
+
+----------------------------------------------------
+
+The following explains the input/output format.
+
+I/O:
+
+The input file should have a series of operations in each line. Each line is of one of these forms.
+We break the operations into two categories, those that print into the output file, and those that do not.
+Note that the operations that do not print still change the linked list.
+
+Operations that do not print:
+i <INT>: insert <INT> into list
+d <INT>: delete <INT> from list
+dl <INT>: delete last occurrence of <INT> from list
+da <INT>: delete all occurrences of <INT> from list
+
+Operations that print:
+
+p: print list in order, as a single line
+len: print length of list
+c <INT>: print number of occurrences of <INT> 
+f <INT>: find <INT> in list, if present, print "FOUND <INT>". If not present, print "<INT> not present"
+
+All the printing is done in the <OUTPUT FILE> provided as a command line argument. For each operation that prints, the output should be in a separate line of the output file.
