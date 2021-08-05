@@ -26,6 +26,8 @@ i <INT>: insert <INT> into list
 d <INT>: delete <INT> from list
 dl <INT>: delete last occurrence of <INT> from list
 da <INT>: delete all occurrences of <INT> from list
+rev: reverse the linked list
+rot <INT>: do a circular rotate of the list by <INT> entries. Suppose the list was 10 20 30 40 50. The operation "rot 2" would lead to 40 50 10 20 30.
 
 Operations that print:
 
@@ -33,5 +35,6 @@ p: print list in order, as a single line
 len: print length of list
 c <INT>: print number of occurrences of <INT> 
 f <INT>: find <INT> in list, if present, print "FOUND <INT>". If not present, print "<INT> not present"
+pal: determine if list is a palindrome (this means that the reverse of the list is the same as the list). Output "PALINDROME" if the list is a palindrome. Otherwise output "NOT PALINDROME"
 
 All the printing is done in the <OUTPUT FILE> provided as a command line argument. For each operation that prints, the output should be in a separate line of the output file.
