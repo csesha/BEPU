@@ -1,0 +1,51 @@
+----------------------------------------------------
+
+README for BST codes
+
+C. Seshadhri, Aug 2021
+-----------------------------------------------------
+
+USAGE (in main folder):
+    <EXECUTABLE NAME>  <INPUT FILE> <OUTPUT FILE>
+
+    <INPUT FILE> is the name of a file with a list of operations to be performed on a binary search tree (BST).
+    <OUTPUT FILE> will have the results of these operations.
+
+----------------------------------------------------
+
+The following explains the input/output format.
+
+I/O:
+
+The input file should have a series of operations in each line. Each line is of one of these forms.
+We break the operations into two categories, those that print into the output file, and those that do not.
+Note that the operations that do not print still change the linked list.
+
+We have some basic operations first.
+
+Operations that do not print:
+i <INT>: insert <INT> into list
+d <INT>: delete <INT> from list
+
+Operations that print:
+
+f <INT>: find <INT> in BST. If present, print "FOUND <INT>". If not present, print "<INT> not present"
+fpre <INT>: find the predecessor of <INT> in BST. The predecessor is the largest element at most <INT>. If <INT> is in the BST, then it is its own predecessor.
+count <INT>: print the number of occurrences of <INT>
+pin: print inorder traversal of BST
+ppre: print pre order traversal of BST
+
+All the printing is done in the <OUTPUT FILE> provided as a command line argument. For each operation that prints, the output should be in a separate line of the output file.
+
+---------------------------------------------------
+
+Advanced functions: Once the basic operations are coded up, you can work on more complex functions on BSTs.
+
+range <INT1> <INT2>: count the number of nodes in the tree whose keys are between <INT1> and <INT2>
+dmore <INT>: delete all nodes whose keys are more than <INT>
+dless <INT>: delete all nodes whose keys are less than <INT>
+ht: print the height of the tree
+wt: print the width of the tree (the size of the largest level of the tree)
+buildfrompre <LIST OF INTS>: A trickier problem. The input is a list of integers that form the pre-order traversal of a BST. Build the BST from the traversal.
+
+
